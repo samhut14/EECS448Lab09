@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css"> </link>
+<script src="formChecker.js"></script>
+<title>Floral Shop</title>
+<meta charset="utf8">
+<html>
+<head>
+</head>
+<body>
+
+<form onsubmit="return checker()" action="customerBackend.php" method="post">
+    <h2>Floral Shop</h2>
+    Username: <input type="email" name="username" id="username"> <br>
+    Password: <input type="password" name="password" id="password" value="">
+    <br><br>
+
+    <div class="row">
+      <div class="column">
+       <img src="Orchids.jpg"> <br>
+       Orchids for $25 each: <input type="number" name="orchids" value="0" min="0" id="orchids">
+      </div>
+      <div class="column">
+        <img src="Roses.jpg"> <br>
+        Roses for $20 each: <input type="number" name="roses" value="0" min="0" id="roses">
+      </div>
+      <div class="column">
+        <img src="Tulips.jpg"> <br>
+        Tulips for $15 each: <input type="number" name="tulips" value="0" min="0" id="tulips">
+      </div>
+    </div>
+
+    <br><br>
+    <p>Which shipping option would you like?</p>
+    <input type="radio" name="shipping" value="Standard" id="standard"> Free 7 day <br>
+    <input type="radio" name="shipping" value="Overnight" id="overnight"> $50.00 over night <br>
+    <input type="radio" name="shipping" value="Express" id="express"> $5.00 three day <br> <br>
+
+    <input type="reset">
+    <input type="submit">
+</form>
+</body>
+</html>

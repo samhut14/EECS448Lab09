@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+ 
+img {
+    height: 200px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=number] {
+    width: 35px;
+    box-sizing: border-box;
+}
+
+td {
+    background-color: lightcoral;
+}
+
+th {
+    background-color: lightblue;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+}
